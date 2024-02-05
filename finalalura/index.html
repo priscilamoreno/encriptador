@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css"> 
+    <link rel="stylesheet" href="./css/styles.css" type="text/css"> 
+</head>
+
+<body>
+    <div class="contenedor_todo">
+        <header class="encabezado">
+            <img src="./img/Logo.png" alt="logo alura" class="encabezado__logo">
+            <h1 class="encabezado__titulo">descifrador</h1>
+        </header>
+
+        <section class="contenedor1 animacion_contenedor">
+            <textarea class="contenedor1_textoIngreso animacion_contenedor" name="texto" id="textarea" cols="30"
+                rows="10" placeholder="escriba el mensaje" autofocus></textarea>
+            <div class="informacion">
+                <img src="./img/Vector.svg" alt="signo de exclamacion" class="informacion__imagen">
+                <p class="informacion__parrafo">solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="cont__btn">
+                <button class="btn btn_encriptar" id="encriptar">Encriptar</button>
+                <button class="btn btn_desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenedor__resultado animacion_contenedor">
+            <textarea style="display:none;" class="contenedor__resultado__texto" name="texto" id="resultado" cols="30"
+                rows="10" placeholder="Escribe aquí tu texto"></textarea>
+            <div id="ocultar">
+                <img src="./img/Muñeco.webp" alt="Muneco buscando con lupa" class="ocultar__muneco">
+                <h2 class="ocultar__titulo">no se encontro el mensaje</h2>
+                <p class="ocultar__parrafo">ingrese el mensaje a encriptar o desencriptar</p>
+            </div>
+            <div class="cont__btn__copiar">
+                <button class="btn btn_copiar" id="copiar" hidden>copiar</button>
+            </div>
+        </section>
+
+
+       
+
+        <footer class="contenedor__redes">
+            <p>© Priscila Abigail Moreno 2024</p>
+        </footer>
+    </div>
+</body>
+
+
+<!-- Iconos de las redes -->
+
+<script src="https://kit.fontawesome.com/b3310eed91.js" crossorigin="anonymous"></script>
+
+<!-- Funcionalidad de la pagina encriptador.html -->
+<script type="text/javascript" src="./js/funcionalidad.js"></script>
+
+</html>
